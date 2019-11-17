@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="class.css">
     <title>Document</title>
 </head>
 <body>
@@ -97,7 +98,7 @@
                     <option value="6">Recursos humanos</option>
                     <option value="7">Servicios</option>
                 </select></td>
-                <td><input type="text" size="40" required></td>
+                <td><input type="text" size="20" required></td>
             </tr>
             <tr>
                 <td>Proposito de la cuenta: *</td>
@@ -105,21 +106,71 @@
             </tr>
             <tr>
                 <td><select name="Proposito" requiered>
-                    <options value="1">Ahorro</options>
-                    <options value="2">Inversion</options>
-                    <options value="3">Pensiones</options>
-                    <options value="4">Pagos</options>
+                    <option value="1">Ahorro</option>
+                    <option value="2">Inversion</option>
+                    <option value="3">Pensiones</option>
+                    <option value="4">Pagos</option>
                 </select></td>
                 <td><select name="Origen" requiered>
-                    <options value="1">Nómina o pensión</options>
-                    <options value="2">Herencia</options>
-                    <options value="3">Trabajo</options>
-                    <options value="4">Otros</options>
+                    <option value="1">Nómina o pensión</option>
+                    <option value="2">Herencia</option>
+                    <option value="3">Trabajo</option>
+                    <option value="4">Otros</option>
                 </select></td>
             </tr>
         </tbody>
     </table>
-
     
+    <table class="gris">
+        <tbody>
+            <tr></tr>
+            <tr>
+                <td>Tipo de via*</td>
+                <td colspan="2">Dirección*</td>
+                <td>Numero*</td>
+                <td>Piso</td>
+            </tr>
+            <tr>
+                <td><select name="via" required>
+                    <option value="1">calle</option>
+                    <option value="2">paseo</option>
+                    <option value="3">vía</option>
+                    <option value="4">avenida</option>
+                </select></td>
+                <td colspan="2"><input type="text" size="30" required></td>
+                <td><input type="number" size="3" required></td>
+                <td><input type="number" size="3"></td>
+            </tr>
+            <tr>
+                <td>Urb./Pol./Otros</td>
+                <td>Localidad*</td>
+                <td>Provincia*</td>
+                <td colspan="2">Código postal</td>
+            </tr>
+            <tr>
+                <td><input type="text" size="20"></td>
+                <td><input type="text" size="20" required></td>
+                <td><select name="provincia" required>
+                    <option value="1">Valencia</option>
+                    <option value="2">Madrid</option>
+                    <option value="3">Valladolid</option>
+                    <option value="4">Asturias</option>
+                    <option value="5">Cádiz</option>
+                </select></td>
+                <td colspan="2"><input type="number" size="5"></td>
+            </tr>
+            <tr>
+                <td>Telefono movil*</td>
+                <td>Telefono particular</td>
+                <td colspan="3">Direccion de e-mail*</td>
+            </tr>
+            <tr>
+                <td><input type="tel" name="movil" required></td>
+                <td><input type="tel" name="telefono"></td>
+                <td colspan="3"><input type="email" name="email" required></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
