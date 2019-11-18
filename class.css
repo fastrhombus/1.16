@@ -2,8 +2,19 @@
 table.gris{
     background-color: rgba(185, 187, 189, 0.884);
 }
+td{
+    width: 25%;
+}
 form{
     border: 1px solid ;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5px;
+}
+button{
+    margin-left: 80%;
+    background-color: orange;
+    color: white;
+    width: 150px;
+    height: 40px;
 }
