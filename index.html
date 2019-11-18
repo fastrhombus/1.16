@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,170 +8,174 @@
     <link rel="stylesheet" href="class.css">
     <title>Document</title>
 </head>
-<body>
-    <table>
-        <tbody>
-            <tr>
-                <td>Tratamiento: *</td>
-                <td>Nombre: *</td>
-                <td>Apellido 1: *</td>
-                <td>Apellido 2:</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="tratamiento" value="Sr" required> Sr. <input type="radio" name="tratamiento" value="sra" required> Sra.</td>
-                <td><input type="text" name="nombre" size="20" required></td>
-                <td><input type="text" name="apellido1" size="20" required></td>
-                <td><input type="text" name="apellido2" size="20"></td>
-            </tr>
-            <tr>
-                <td>Tipo Doc: *</td>
-                <td>Nº Doc: *</td>
-                <td>Fecha de nacimiento: *</td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td><select name="TipoDoc" requiered>
-                    <option value="1">D.N.I.</option>
-                    <option value="2">NIA</option>
-                    <option value="3">Pasaporte</option>
-                </select></td>
-                <td><input type="number" size="12" name="Ndoc"required></td>
-                <td><input type="date" name="fecha" required></td>
-            </tr>
-            <tr>
-                <td>País de Nacimiento: *</td>
-                <td>Nacionalidad: *</td>
-                <td>Segunda nacionalidad:</td>
-                <td>País de residencia fiscal: *</td>
-            </tr>
-            <tr>
-                <td><select name="PNac" requiered>
-                    <option value="1">España</option>
-                    <option value="2">Portugal</option>
-                    <option value="3">Francia</option>
-                    <option value="4">Italia</option>
-                </select></td>
-                <td><select name="nacionalidad" requiered>
-                    <option value="1">España</option>
-                    <option value="2">Portugal</option>
-                    <option value="3">Francia</option>
-                    <option value="4">Italia</option>
-                </select></td>
-                <td><select name="nacionalidad2" >
-                    <option value="1">España</option>
-                    <option value="2">Portugal</option>
-                    <option value="3">Francia</option>
-                    <option value="4">Italia</option>
-                </select></td>
-                <td><select name="Residencia" requiered>
-                    <option value="1">España</option>
-                    <option value="2">Portugal</option>
-                    <option value="3">Francia</option>
-                    <option value="4">Italia</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td>Trabajo: *</td>
-                <td>Tipo de actividad*</td>
-                <td>Sector Profesional*</td>
-                <td>Empresa: *</td>
-            </tr>
-            <tr>
-                <td><select name="Trabajo" requiered>
-                    <option value="1">Estudiante</option>
-                    <option value="2">Desempleado</option>
-                    <option value="3">Funcionario</option>
-                    <option value="4">Autonomo</option>
-                </select></td>
-                <td><select name="Actividad" requiered>
-                    <option value="1">Tares hogar</option>
-                    <option value="2">Estudiante</option>
-                    <option value="3">Desempleado</option>
-                    <option value="4">Jubilado</option>
-                    <option value="5">Pensionista</option>
-                </select></td>
-                <td><select name="Sector" requiered>
-                    <option value="1">No trabaja</option>
-                    <option value="2">Banca</option>
-                    <option value="3">Construccion</option>
-                    <option value="4">Energía</option>
-                    <option value="5">Industria</option>
-                    <option value="6">Recursos humanos</option>
-                    <option value="7">Servicios</option>
-                </select></td>
-                <td><input type="text" size="20" required></td>
-            </tr>
-            <tr>
-                <td>Proposito de la cuenta: *</td>
-                <td>Origen de sus ahorros: *</td>
-            </tr>
-            <tr>
-                <td><select name="Proposito" requiered>
-                    <option value="1">Ahorro</option>
-                    <option value="2">Inversion</option>
-                    <option value="3">Pensiones</option>
-                    <option value="4">Pagos</option>
-                </select></td>
-                <td><select name="Origen" requiered>
-                    <option value="1">Nómina o pensión</option>
-                    <option value="2">Herencia</option>
-                    <option value="3">Trabajo</option>
-                    <option value="4">Otros</option>
-                </select></td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <table class="gris">
-        <tbody>
-            <tr></tr>
-            <tr>
-                <td>Tipo de via*</td>
-                <td colspan="2">Dirección*</td>
-                <td>Numero*</td>
-                <td>Piso</td>
-            </tr>
-            <tr>
-                <td><select name="via" required>
-                    <option value="1">calle</option>
-                    <option value="2">paseo</option>
-                    <option value="3">vía</option>
-                    <option value="4">avenida</option>
-                </select></td>
-                <td colspan="2"><input type="text" size="30" required></td>
-                <td><input type="number" size="3" required></td>
-                <td><input type="number" size="3"></td>
-            </tr>
-            <tr>
-                <td>Urb./Pol./Otros</td>
-                <td>Localidad*</td>
-                <td>Provincia*</td>
-                <td colspan="2">Código postal</td>
-            </tr>
-            <tr>
-                <td><input type="text" size="20"></td>
-                <td><input type="text" size="20" required></td>
-                <td><select name="provincia" required>
-                    <option value="1">Valencia</option>
-                    <option value="2">Madrid</option>
-                    <option value="3">Valladolid</option>
-                    <option value="4">Asturias</option>
-                    <option value="5">Cádiz</option>
-                </select></td>
-                <td colspan="2"><input type="number" size="5"></td>
-            </tr>
-            <tr>
-                <td>Telefono movil*</td>
-                <td>Telefono particular</td>
-                <td colspan="3">Direccion de e-mail*</td>
-            </tr>
-            <tr>
-                <td><input type="tel" name="movil" required></td>
-                <td><input type="tel" name="telefono"></td>
-                <td colspan="3"><input type="email" name="email" required></td>
-            </tr>
-        </tbody>
-    </table>
 
+<body>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Tratamiento: *</td>
+                    <td>Nombre: *</td>
+                    <td>Apellido 1: *</td>
+                    <td>Apellido 2:</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="tratamiento" value="Sr" required> Sr. <input type="radio"
+                            name="tratamiento" value="sra" required> Sra.</td>
+                    <td><input type="text" name="nombre" size="20" required></td>
+                    <td><input type="text" name="apellido1" size="20" required></td>
+                    <td><input type="text" name="apellido2" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Tipo Doc: *</td>
+                    <td>Nº Doc: *</td>
+                    <td>Fecha de nacimiento: *</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td><select name="TipoDoc" requiered>
+                            <option value="1">D.N.I.</option>
+                            <option value="2">NIA</option>
+                            <option value="3">Pasaporte</option>
+                        </select></td>
+                    <td><input type="number" size="12" name="Ndoc" required></td>
+                    <td><input type="date" name="fecha" required></td>
+                </tr>
+                <tr>
+                    <td>País de Nacimiento: *</td>
+                    <td>Nacionalidad: *</td>
+                    <td>Segunda nacionalidad:</td>
+                    <td>País de residencia fiscal: *</td>
+                </tr>
+                <tr>
+                    <td><select name="PNac" requiered>
+                            <option value="1">España</option>
+                            <option value="2">Portugal</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Italia</option>
+                        </select></td>
+                    <td><select name="nacionalidad" requiered>
+                            <option value="1">España</option>
+                            <option value="2">Portugal</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Italia</option>
+                        </select></td>
+                    <td><select name="nacionalidad2">
+                            <option value="1">España</option>
+                            <option value="2">Portugal</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Italia</option>
+                        </select></td>
+                    <td><select name="Residencia" requiered>
+                            <option value="1">España</option>
+                            <option value="2">Portugal</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Italia</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Trabajo: *</td>
+                    <td>Tipo de actividad*</td>
+                    <td>Sector Profesional*</td>
+                    <td>Empresa: *</td>
+                </tr>
+                <tr>
+                    <td><select name="Trabajo" requiered>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Desempleado</option>
+                            <option value="3">Funcionario</option>
+                            <option value="4">Autonomo</option>
+                        </select></td>
+                    <td><select name="Actividad" requiered>
+                            <option value="1">Tares hogar</option>
+                            <option value="2">Estudiante</option>
+                            <option value="3">Desempleado</option>
+                            <option value="4">Jubilado</option>
+                            <option value="5">Pensionista</option>
+                        </select></td>
+                    <td><select name="Sector" requiered>
+                            <option value="1">No trabaja</option>
+                            <option value="2">Banca</option>
+                            <option value="3">Construccion</option>
+                            <option value="4">Energía</option>
+                            <option value="5">Industria</option>
+                            <option value="6">Recursos humanos</option>
+                            <option value="7">Servicios</option>
+                        </select></td>
+                    <td><input type="text" size="20" required></td>
+                </tr>
+                <tr>
+                    <td>Proposito de la cuenta: *</td>
+                    <td>Origen de sus ahorros: *</td>
+                </tr>
+                <tr>
+                    <td><select name="Proposito" requiered>
+                            <option value="1">Ahorro</option>
+                            <option value="2">Inversion</option>
+                            <option value="3">Pensiones</option>
+                            <option value="4">Pagos</option>
+                        </select></td>
+                    <td><select name="Origen" requiered>
+                            <option value="1">Nómina o pensión</option>
+                            <option value="2">Herencia</option>
+                            <option value="3">Trabajo</option>
+                            <option value="4">Otros</option>
+                        </select></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="gris">
+            <tbody>
+                <tr></tr>
+                <tr>
+                    <td>Tipo de via*</td>
+                    <td colspan="2">Dirección*</td>
+                    <td>Numero*</td>
+                    <td>Piso</td>
+                </tr>
+                <tr>
+                    <td><select name="via" required>
+                            <option value="1">calle</option>
+                            <option value="2">paseo</option>
+                            <option value="3">vía</option>
+                            <option value="4">avenida</option>
+                        </select></td>
+                    <td colspan="2"><input type="text" size="30" required></td>
+                    <td><input type="number" size="3" required></td>
+                    <td><input type="number" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Urb./Pol./Otros</td>
+                    <td>Localidad*</td>
+                    <td>Provincia*</td>
+                    <td colspan="2">Código postal</td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="20"></td>
+                    <td><input type="text" size="20" required></td>
+                    <td><select name="provincia" required>
+                            <option value="1">Valencia</option>
+                            <option value="2">Madrid</option>
+                            <option value="3">Valladolid</option>
+                            <option value="4">Asturias</option>
+                            <option value="5">Cádiz</option>
+                        </select></td>
+                    <td colspan="2"><input type="number" size="5"></td>
+                </tr>
+                <tr>
+                    <td>Telefono movil*</td>
+                    <td>Telefono particular</td>
+                    <td colspan="3">Direccion de e-mail*</td>
+                </tr>
+                <tr>
+                    <td><input type="tel" name="movil" required></td>
+                    <td><input type="tel" name="telefono"></td>
+                    <td colspan="3"><input type="email" name="email" required></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
 </body>
+
 </html>

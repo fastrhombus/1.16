@@ -1,3 +1,9 @@
+
 table.gris{
     background-color: rgba(185, 187, 189, 0.884);
+}
+form{
+    border: 1px solid ;
+    margin-left: 20%;
+    margin-right: 20%;
 }
